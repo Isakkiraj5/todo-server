@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
+require("dotenv").config()
 const url = 'mongodb+srv://isakkiraj:Esscooty%407300@cluster0.fdsuknk.mongodb.net/todo';
 // MongoDB connection
 mongoose.connect(url);
